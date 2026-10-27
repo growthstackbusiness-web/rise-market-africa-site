@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover event services, venues and accommodation with Rise Market Africa.">
+  <title>Rise Market Africa | Discover. Connect. Book.</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #203027;
+      line-height: 1.6;
+      background: #fff;
+    }
+    header {
+      padding: 18px 7%;
+      background: #123c2b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .brand { font-size: 21px; font-weight: bold; }
+    header a { color: white; text-decoration: none; }
+    .hero {
+      background: #edf5ef;
+      text-align: center;
+      padding: 70px 7%;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.15;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      color: #123c2b;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+    .button {
+      display: inline-block;
+      background: #176b45;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin: 5px;
+    }
+    section { padding: 45px 7%; }
+    h2 { text-align: center; color: #123c2b; }
+    .intro { text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .item {
+      border: 1px solid #dce7df;
+      border-radius: 10px;
+      padding: 22px;
+      background: #fff;
+    }
+    .item h3 { color: #176b45; margin-top: 0; }
+    .note {
+      background: #fff6df;
+      padding: 14px;
+      border-radius: 7px;
+      font-size: 14px;
+    }
+    footer {
+      background: #123c2b;
+      color: white;
+      padding: 25px 7%;
+      text-align: center;
+    }
+    footer a { color: white; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Rise Market Africa</div>
+    <div>Liberia first. Africa next.</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Find the right people and places for your next event.</h1>
+      <p>
+        Discover event professionals, venues, halls and accommodation.
+        Rise Market Africa aims to make it easier to discover options
+        and connect with providers in Liberia.
+      </p>
+      <a class="button" href="#categories">Explore Categories</a>
+      <a class="button" href="#providers">Become a Provider</a>
+    </section>
+
+    <section id="categories">
+      <h2>Explore Rise Market Africa</h2>
+      <p class="intro">Start with the services and places you need.</p>
+      <div class="grid">
+        <div class="item">
+          <h3>Entertainment</h3>
+          <p>Discover DJs, musicians, MCs, comedians and performers for your occasion.</p>
+        </div>
+        <div class="item">
+          <h3>Venues &amp; Halls</h3>
+          <p>Explore places for weddings, meetings, celebrations and other events.</p>
+        </div>
+        <div class="item">
+          <h3>Accommodation</h3>
+          <p>Find accommodation options for visitors, families and event guests.</p>
+        </div>
+        <div class="item">
+          <h3>Event Services</h3>
+          <p>Explore event-related services to help plan your special occasion.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>1. Discover</h3>
+          <p>Explore categories to find relevant services and places.</p>
+        </div>
+        <div class="item">
+          <h3>2. Compare</h3>
+          <p>Review available information before deciding who to contact.</p>
+        </div>
+        <div class="item">
+          <h3>3. Connect</h3>
+          <p>Contact a provider to discuss availability and your requirements.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="providers">
+      <h2>Offer Your Services on Rise Market Africa</h2>
+      <p class="intro">
+        Are you an entertainer, venue owner, accommodation provider
+        or event professional in Liberia? We are developing a platform
+        to help customers discover local providers.
+      </p>
+      <p class="intro">
+        <strong>Provider registration is not open yet.</strong>
+      </p>
+    </section>
+
+    <section>
+      <p class="note">
+        <strong>Demonstration website:</strong> This is an early preview.
+        Provider accounts, live listings, verification, bookings and payments
+        are not yet operational. Do not submit identity documents or payment details.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Rise Market Africa</strong></p>
+    <p>Discover. Connect. Book.</p>
+    <p>&copy; <span id="year"></span> Rise Market Africa</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+                                 </html>
+                                 
