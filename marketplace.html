@@ -1,0 +1,389 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover event services, venues and accommodation in Liberia with Rise Market Africa.">
+  <title>Rise Market Africa | Marketplace</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7f5;
+      color: #24352c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123c2d;
+      color: white;
+      padding: 18px 5%;
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f4bd43;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: #176b46;
+      color: white;
+      padding: 55px 6%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      margin: 0 0 12px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+
+    .search {
+      max-width: 650px;
+      margin: auto;
+      display: flex;
+      gap: 8px;
+    }
+
+    input, select, button {
+      font: inherit;
+      padding: 13px;
+      border-radius: 7px;
+    }
+
+    input, select {
+      border: 1px solid #ccd6ce;
+      background: white;
+    }
+
+    .search input {
+      flex: 1;
+      min-width: 0;
+    }
+
+    button {
+      border: none;
+      background: #f4bd43;
+      color: #26352b;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 18px 45px;
+    }
+
+    h2 {
+      color: #123c2d;
+      font-size: 25px;
+    }
+
+    .intro {
+      color: #68766d;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .category {
+      background: white;
+      border: 1px solid #e0e9e2;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .category .icon {
+      font-size: 34px;
+    }
+
+    .category h3 {
+      color: #176b46;
+      margin-bottom: 5px;
+    }
+
+    .category p {
+      color: #68766d;
+      font-size: 14px;
+    }
+
+    .listing-search {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .listing-search input,
+    .listing-search select {
+      width: 100%;
+    }
+
+    .notice {
+      background: #fff7df;
+      border: 1px solid #ead79e;
+      padding: 15px;
+      border-radius: 9px;
+      font-size: 14px;
+    }
+
+    .empty {
+      background: white;
+      border: 1px dashed #bdcbbf;
+      border-radius: 12px;
+      padding: 28px 15px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    footer {
+      background: #123c2d;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .categories,
+      .listing-search {
+        grid-template-columns: 1fr;
+      }
+
+      .search {
+        flex-direction: column;
+      }
+
+      .search button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">RISE MARKET <span>AFRICA</span></div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#providers">Providers</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Discover. Connect. Grow.</h1>
+
+  <p>
+    Find entertainment, event venues, accommodation
+    and professional event services in Liberia.
+  </p>
+
+  <form class="search" id="searchForm">
+    <input
+      type="search"
+      id="keyword"
+      placeholder="What are you looking for?"
+      aria-label="Search marketplace">
+
+    <button type="submit">Search</button>
+  </form>
+</section>
+
+<main>
+
+  <section id="categories">
+    <h2>Explore Our Categories</h2>
+
+    <p class="intro">
+      Discover services and places for your next event.
+    </p>
+
+    <div class="categories">
+
+      <article class="category">
+        <div class="icon">🎤</div>
+        <h3>Entertainment</h3>
+        <p>
+          DJs, musicians, singers, comedians,
+          MCs, dancers and performers.
+        </p>
+      </article>
+
+      <article class="category">
+        <div class="icon">🏛️</div>
+        <h3>Venues &amp; Halls</h3>
+        <p>
+          Discover event halls, venues and
+          suitable spaces for your occasion.
+        </p>
+      </article>
+
+      <article class="category">
+        <div class="icon">🏨</div>
+        <h3>Accommodation</h3>
+        <p>
+          Find eligible hotels, guesthouses
+          and accommodation providers.
+        </p>
+      </article>
+
+      <article class="category">
+        <div class="icon">🎉</div>
+        <h3>Event Services</h3>
+        <p>
+          Find event planners and other
+          professional event-service providers.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="providers">
+    <h2>Find a Provider</h2>
+
+    <p class="intro">
+      Search by category and location.
+    </p>
+
+    <div class="listing-search">
+
+      <select id="category">
+        <option value="">All categories</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Venues & Halls">Venues &amp; Halls</option>
+        <option value="Accommodation">Accommodation</option>
+        <option value="Event Services">Event Services</option>
+      </select>
+
+      <input
+        type="search"
+        id="location"
+        placeholder="Enter location, e.g. Monrovia">
+    </div>
+
+    <div class="notice" id="searchMessage">
+      The live provider directory is not connected yet.
+      Real provider listings will appear after the database
+      and provider registration system are implemented.
+    </div>
+
+    <div class="empty">
+      <h3>Provider listings coming soon</h3>
+      <p>
+        Rise Market Africa is preparing its marketplace
+        for customers and eligible providers.
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Rise Market Africa</h2>
+
+    <p>
+      Rise Market Africa is a KARDRIC Ventures LLC project
+      designed to connect customers with service providers
+      and businesses, starting in Liberia.
+    </p>
+
+    <p>
+      Our aim is to make discovering services and places
+      easier, more accessible and more convenient.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Rise Market Africa | KARDRIC Ventures LLC</p>
+  <p>Building Businesses. Creating Value. Impacting Futures.</p>
+  <p>Marketplace demonstration. Bookings and payments are not yet operational.</p>
+</footer>
+
+<script>
+  const form = document.getElementById("searchForm");
+  const keyword = document.getElementById("keyword");
+  const category = document.getElementById("category");
+  const location = document.getElementById("location");
+  const message = document.getElementById("searchMessage");
+
+  function updateMessage() {
+    const details = [];
+
+    if (keyword.value.trim()) {
+      details.push("Keyword: " + keyword.value.trim());
+    }
+
+    if (category.value) {
+      details.push("Category: " + category.value);
+    }
+
+    if (location.value.trim()) {
+      details.push("Location: " + location.value.trim());
+    }
+
+    message.textContent = details.length
+      ? details.join(" | ") +
+        ". Live provider search is not connected yet."
+      : "The live provider directory is not connected yet.";
+  }
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    updateMessage();
+  });
+
+  category.addEventListener("change", updateMessage);
+  location.addEventListener("input", updateMessage);
+</script>
+
+</body>
+  </html>
+                                                
